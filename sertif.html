@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>YOGAstyle</title>
+    <link rel="stylesheet" href="styles2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>JavaScript SimpleAdaptiveSlider - Слайдер для сайта на чистом JavaScript [Example 01]</title>
+        <!-- Подключаем CSS слайдера -->
+        <link rel="stylesheet" href="slider/simple-adaptive-slider.min.css">
+        <!-- Подключаем JS слайдера -->
+        <script defer src="slider/simple-adaptive-slider.min.js"></script>
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            // инициализация слайдера
+            var slider = new SimpleAdaptiveSlider('.slider', {
+              loop: true,
+              autoplay: true,
+              interval: 3000,
+              swipe: true,
+            });
+          });
+        </script>
+        <style>
+          /* стили для элемента body */
+          body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+              sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+          }
+
+          /* дополнительные стили для этого примера */
+          .slider__items {
+            counter-reset: slide;
+          }
+
+          .slider__item {
+            counter-increment: slide;
+          }
+
+          
+        </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="body_contacts">
+    <div class="wrapper">
+        <header class="header">
+            <img class="header__logo" alt="" src="images/logo.png">
+            <nav class="header__nav">
+                <a class="nav__link" href="index.html">Главная</a>
+                <!-- <img  src="images/l2.png" class="nav__link"> -->
+                <div class="nav__link" id="line"></div>
+                <a class="nav__link" href="direction.html">Направления</a>
+                <!-- <img  src="images/l2.png" class="nav__link"> -->
+                <div class="line nav__link"></div>
+                <a class="nav__link" href="aboutus.html">О нас</a>
+                <!-- <img  src="images/l2.png" class="nav__link"> -->
+                <div class="line nav__link"></div>
+                <a class="nav__link" href="contacts.html">Контакты</a>
+            </nav>
+            <div class="header__nav_drop-menu">
+                <div class="header_nav_burger">
+                    <svg class="header_nav_burger-img" onclick="document.querySelector('.header_nav_list').classList.toggle('active')"><use xlink:href="sprite.svg#burger_menu_black"></svg>
+                </div>
+                <div class="header_nav_list">
+                    <ul class="header_nav_list-links header__nav">
+                        <li><a class="nav__link" href="index.html">Главная</a></li>
+                        <li><a class="nav__link" href="direction.html">Направления</a></li>
+                        <li><a class="nav__link" href="aboutus.html">О нас</a></li>
+                        <li><a class="nav__link" href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    <main>
+        <div class="img3"><h1 class="connection">Сертификаты</h1></div>
+        <div class="slider">
+            <div class="slider__wrapper">
+              <div class="slider__items">
+                <div class="slider__item">
+                  <div style="">
+                  <img src="slider/1e.png" alt=""></div>
+                </div>
+                <div class="slider__item">
+                  <div style=""><img src="slider/2.jpg" alt=""></div>
+                </div>
+                <div class="slider__item">
+                  <div style=""><img src="slider/1.jpeg" alt=""></div>
+                </div>
+                <!-- <div class="slider__item">
+                  <div style="height: 600px; background:url(slider/2.png) no-repeat center / contain;"></div>
+                </div> -->
+              </div>
+            </div>
+            <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+            <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+          </div>
+    </main>
+    <footer class="footer">
+
+        <div class="footer__network"><span class="footer__network-text">ПОДПИШИСЬ НА НАС В СОЦСЕТЯХ:</span>
+          <div class="footer__network-img">
+            <div class="telegramm"><a href="https://web-telegram.ru/"><svg width="48" height="48"><use xlink:href="sprite.svg#telegram"></svg></a></div>
+            <div class="instagram"><a href="https://www.instagram.com/_moron96/"><svg width="48" height="48" style="    background:linear-gradient(45deg, rgba(255, 129, 0, 1) 0%, rgba(255, 114, 9, 1) 19%, rgba(245, 94, 22, 1) 32%, rgba(217, 41, 56, 1) 48%, rgba(145, 0, 255, 1) 99%); border-radius:50%;
+                "><use xlink:href="sprite.svg#instagram"></svg></a></div>
+            <div class="vk"><a  href="https://vk.com/"><svg width="48" height="48"><use xlink:href="sprite.svg#vk" fill="#"></svg></a></div>
+        </div>
+        </div>
+        <div class="menu_footer">
+            <a class="menu_footer-link" href="contacts.html">Контакты</a>
+            <img  src="images/l.png" class="menu_footer-link">
+            <a class="menu_footer-link" href="https://www.garant.ru/products/ipo/my_system/certificate/">Сертификат</a>
+            <img  src="images/l.png" class="menu_footer-link">
+            <span class="menu_footer-link">2022 год</span>
+        </div>
+
+</footer>
+    </div>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=6f085de0-c50a-4d72-8506-df92280a40c4&lang=ru_RU"></script>
+                <script src="script.js"></script>
+</body>
+</html>

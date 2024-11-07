@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>YOGAstyle</title>
+    <link rel="stylesheet" href="styles2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body class="body__direction">
+    <div class="wrapper">
+        <header class="header">
+            <a class="nav__link" href="index.html"><img class="header__logo" alt="" src="images/logo.png"></a>
+            <nav class="header__nav">
+                <a class="nav__link" href="index.html">Главная</a>
+                <!-- <img  src="images/l2.png" class="nav__link"> -->
+                <div class="nav__link" id="line"></div>
+                <a class="nav__link" href="direction.html">Направления</a>
+                <!-- <img  src="images/l2.png" class="nav__link"> -->
+                <div class="line nav__link"></div>
+                <a class="nav__link" href="aboutus.html">О нас</a>
+                <!-- <img  src="images/l2.png" class="nav__link"> -->
+                <div class="line nav__link"></div>
+                <a class="nav__link" href="contacts.html">Контакты</a>
+            </nav>
+            <div class="header__nav_drop-menu">
+                <div class="header_nav_burger">
+                    <svg class="header_nav_burger-img" onclick="document.querySelector('.header_nav_list').classList.toggle('active')"><use xlink:href="sprite.svg#burger_menu_black"></svg>
+                </div>
+                <div class="header_nav_list">
+                    <ul class="header_nav_list-links header__nav">
+                        <li><a class="nav__link" href="index.html">Главная</a></li>
+                        <li><a class="nav__link" href="direction.html">Направления</a></li>
+                        <li><a class="nav__link" href="aboutus.html">О нас</a></li>
+                        <li><a class="nav__link" href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main class="about_direction">
+            <div class="img2">
+                <h1>НАПРАВЛЕНИЯ</h1>
+            </div>
+            <div class="direction_div">
+                <section class="direction">
+                    <div class="direction__img"><img alt="" src="images/pos2.png"></div>
+                    <article class="direction_info">
+                        Хатха-йога — базовое направление йоги, оно сформировалось в XI веке в Индии. Хатха-йога включает
+                        в
+                        себя разные асаны и практики дыхания (пранаямы), специальные жесты (мудры), шаткармы (практики
+                        очищения), а ещё медитации для глубокого расслабления. </article>
+                </section>
+                <section class="direction">
+                    <div class="direction__img"><img alt="" src="images/pos1.png"></div>
+                    <article class="direction_info">
+                        Аштанга-йога — динамическая
+                        практика йоги, где асаны соединяются специальными связками (виньясами), а всю практику
+                        сопровождают
+                        пранаямы. Виньясы помогают оставаться в потоке в течение всего занятия. </article>
+                </section>
+                <section class="direction">
+                    <div class="direction__img"><img alt="" src="images/pos3.png"></div>
+                    <article class="direction_info">
+                        Дживамукти-йога
+                        Главная цель
+                        дживамукти-йоги — освобождения ума и тела. Практика напоминает плавный танец из виньяс, который
+                        начинается под пение мантр. Энергичный поток асан на баланс, силу и вытяжение точно понравится
+                        любителям
+                        небанальных упражнений.</article>
+                </section>
+            </div>
+        </main>
+
+        <div class="direction">
+            <img src="images/girl.png" class="girl">
+            <article class="block_direction">
+                <span class="block_text_d ">Отвлекись от проблем и избавься от ненужных мыслей вместе с нами!</span>
+                <a href="#openModal"> <input class="btn third" type="button" value="Записаться">
+                 </input></a>
+
+            </article>
+        </div>
+        <div id="openModal" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Онлайн-запись</h3>
+                        <a href="#close" title="Close" class="close">×</a>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                        <p class="form_name" style="text-align: center;"> Ваше имя</p>
+                        <input class="form" type="text" placeholder="Например: Иван" style="text-align: center;">
+                        <p class="form_name" style="text-align: center;"> Ваш телефон</p>
+                        <input class="form" type="text" placeholder="+79213456453" style="text-align: center;">
+                        <p class="form_name" style="text-align: center;"> Ваш e-mail</p>
+                        <input class="form" type="text" placeholder="email@email.com" style="text-align: center;">
+                        </p>
+
+                        <a href="#openModal2"> <input class="enroll2" type="button" value="Отправить заявку"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+        <div id="openModal2" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Онлайн-запись</h3>
+                        <a href="#close" title="Close" class="close">×</a>
+                    </div>
+                    <div class="modal-body" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                        <p>
+                        <p class="form_name" style="text-align: center; border-bottom: 1px solid rgb(29, 29, 29);   font-size: 30px;  
+                        margin-bottom: 10px;"> Ваша заявка отправлена!</p>
+                       
+                        <p class="form_name" style="text-align: center;font-size: 25px; "> Ожидайте звонка в ближайшее время</p>
+                       
+                       
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    <footer class=" footer">
+        <div class="footer__network"><span class="footer__network-text">ПОДПИШИСЬ НА НАС В
+                СОЦСЕТЯХ:</span>
+                <div class="footer__network-img">
+                    <div class="telegramm"><a href="https://web-telegram.ru/"><svg width="48" height="48"><use xlink:href="sprite.svg#telegram"></svg></a></div>
+                    <div class="instagram"><a href="https://www.instagram.com/_moron96/"><svg width="48" height="48" style="    background:linear-gradient(45deg, rgba(255, 129, 0, 1) 0%, rgba(255, 114, 9, 1) 19%, rgba(245, 94, 22, 1) 32%, rgba(217, 41, 56, 1) 48%, rgba(145, 0, 255, 1) 99%); border-radius:50%;
+                        "><use xlink:href="sprite.svg#instagram"></svg></a></div>
+                    <div class="vk"><a  href="https://vk.com/"><svg width="48" height="48"><use xlink:href="sprite.svg#vk" fill="#"></svg></a></div>
+                </div>
+        </div>
+        <div class="menu_footer">
+            <a class="menu_footer-link" href="contacts.html">Контакты</a>
+            <img src="images/l.png" class="menu_footer-link">
+            <a class="menu_footer-link" href="sertif.html">Сертификат</a>
+            <img src="images/l.png" class="menu_footer-link">
+            <span class="menu_footer-link">2022 год</span>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>
